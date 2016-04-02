@@ -19,7 +19,7 @@ After, you can see :
 
 ## Uninstall
 
-**vfp_tmlanguage_generator.prg** : create a uninstaller script file : **"vfp_tmtheme\uninstall vfp theme.cmd"**
+**vfp_tmtheme_generator.prg** : create a uninstaller script file : **"vfp_tmtheme\uninstall vfp theme.cmd"**
 * who contains:
 ```
 rd /S/Q %USERPROFILE%\.vscode\extensions\Theme-Dark-vfp\
