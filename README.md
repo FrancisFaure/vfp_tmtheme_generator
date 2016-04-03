@@ -12,19 +12,19 @@
 
 Download [vfp_tmtheme_generator.prg](https://github.com/FrancisFaure/vfp_tmtheme_generator), personalize, run in vfp9, and click "Ok" to install.
 
-After, you can see :
+The personalized theme looks like
 
 ![THEME](images/Screen-to-gif.gif)
 
 
 ## Uninstall
 
-**vfp_tmtheme_generator.prg** : create a uninstaller script file : **"vfp_tmtheme\uninstall vfp theme.cmd"**
-* who contains:
+**vfp_tmtheme_generator.prg** : creates a uninstaller script: **"vfp_tmtheme\uninstall vfp theme.cmd"**
+* which contains:
 ```
 rd /S/Q %USERPROFILE%\.vscode\extensions\Theme-Dark-vfp\
 ```
-(or remove %USERPROFILE%\.vscode\extensions\Theme-Dark-vfp\ with Windows explorer)
+(Another way using Windows Explorer is to delete **%USERPROFILE%\.vscode\extensions\Theme-Dark-vfp\**)
 
 
 ## License
