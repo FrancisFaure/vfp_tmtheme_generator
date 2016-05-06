@@ -13,7 +13,7 @@ set exact on
 #define C_PACKAGE_JSON_FILENAME            "package.json"
 #define C_UNINSTALL_FILENAME               "uninstall vfp theme.cmd"
 #define C_OUTPUT_DIR                       addbs(justpath(sys(16,0))) + "vfp_tmtheme\"
-#define C_VERSION                          "0.1.0"
+#define C_VERSION                          "0.1.1"
 #define C_MESSAGEBOX_TITLE                 "Personalized VS Code Theme for Visual FoxPro"
 
 local lsxml as string
@@ -67,7 +67,7 @@ function xml_theme(lsKeyWord as string,;
   lsScope = ""
   do case
     case upper(m.lsKeyWord) == "COMMENTS"
-      lsScope = "Comment"
+      lsScope = "comment"
     case upper(m.lsKeyWord) == "COMMANDS"
       lsScope = "support.other"
     case upper(m.lsKeyWord) == "FUNCTIONS"
