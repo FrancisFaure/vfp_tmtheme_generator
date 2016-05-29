@@ -13,8 +13,10 @@ set exact on
 #define C_PACKAGE_JSON_FILENAME            "package.json"
 #define C_UNINSTALL_FILENAME               "uninstall vfp theme.cmd"
 #define C_OUTPUT_DIR                       addbs(justpath(sys(16,0))) + "vfp_tmtheme\"
-#define C_VERSION                          "0.1.1"
 #define C_MESSAGEBOX_TITLE                 "Personalized VS Code Theme for Visual FoxPro"
+* 0.1.1 Initial Commit
+* 0.1.2 utf8( ) function updated by "akvalibra"
+#define C_VERSION                          "0.1.2"
 
 local lsxml as string
 lsxml = ""
@@ -156,7 +158,8 @@ procedure DeleteFileIfExist(lsFilename as string)
 endproc
 
 function utf8(m.lsString as string) as string
-  return strconv(strconv(m.lsString, 1),9)
+  * return strconv(strconv(m.lsString, 1),9) && "akvalibra" update
+  return strconv(m.lsString,9)
 endfunc
 
 function theme_package_json() as string
