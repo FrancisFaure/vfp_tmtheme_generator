@@ -16,7 +16,8 @@ set exact on
 #define C_MESSAGEBOX_TITLE                 "Personalized VS Code Theme for Visual FoxPro"
 * 0.1.1 Initial Commit
 * 0.1.2 utf8( ) function updated by "akvalibra"
-#define C_VERSION                          "0.1.2"
+* 0.1.3 version VS Code 0.1 -> 1.x spotted by Rick Strahl
+#define C_VERSION                          "0.1.3"
 
 local lsxml as string
 lsxml = ""
@@ -179,7 +180,7 @@ function theme_package_json() as string
 	"version": "<<m.lsVersion>>",
 	"publisher": "Francis FAURE",
 	"engines": {
-		"vscode": "^0.10.1"
+		"vscode": "^1"
 	},
 	"categories": [
 		"Themes"
